@@ -27,3 +27,6 @@ def signup(request):
         return render(request, 'index.html', res_data)
 
     return render(request, 'index.html')
+
+def git(request):
+    return HttpResponse("<h2>git version</h2>")
