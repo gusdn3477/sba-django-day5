@@ -30,3 +30,16 @@ def signup(request):
 
 def git(request):
     return HttpResponse("<h2>git version</h2>")
+
+def gu(request):
+    num = request.GET.get('num','')
+
+    return HttpResponse(f'<h1> gugu : {num_gugu(num)} </h1>')
+
+def num_gugu(num):
+
+    st = ""
+    for i in range(1,10):
+        st += f"{num} * {i} = {int(num) * i}<br>"
+     
+    return st
