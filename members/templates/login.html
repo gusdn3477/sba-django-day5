@@ -1,2 +1,9 @@
-Congraturaion!
-로그인에 성공하였어요!
+<h2> 로그인 </h2>
+
+<form method="post" action="/login">
+    {% csrf_token %}
+    id : <input type="text" name = "id" />
+    pw : <input type="email" name = "email" />
+    
+    <input type="submit">
+</form>
